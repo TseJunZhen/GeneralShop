@@ -1,0 +1,73 @@
+
+<style>
+    .page {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rwd-img-wrapper {
+  background: center no-repeat transparent;
+  background-size: cover;
+  min-height: 180px;
+  height: calc( 180px + (300 - 180) * ( (100vw - 320px)/(1200 - 320) ) );
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+#size {
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 0.25em 1em;
+}
+
+.text-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1em 2em 3em;
+}
+
+</style>
+<div class="page">
+  <div class="rwd-img-wrapper" style="background-image: url(pc1.png)">
+      <!--<img src="https://unsplash.it/1600/900" alt="Unsplash.it">-->
+  </div>
+  <div id="size"></div>
+
+  <div class="text-wrapper">
+    <h1>Fluid Aspect Ratio</h2>
+    
+    <h2>How does this work?</h2>
+  <h3>
+<h1>Chicks,eggs,shot eggs,games,puzzle games,hand-eye coordination,control games,pass time games<h1>
+
+Chicks eliminate the tens of thousands of eggs
+
+Move left and right, launch the chicken bullets
+
+Protect your home, don't let the eggs outside go to your own site.
+
+Will appear randomly in the devil
+
+Let me protect my home.
+      </h3>
+    <p>If I were to break it down into <abbr title="Syntactically Awesome Style Sheets">SASS</abbr> variables, it might look something like this:</p>
+  <pre><code>height: calc($min-height + ($max-height - $min-height) * ((100vw - $min-width)/($max-width - $min-width)))</code></pre>
+    <p>And further, if I were to break this down into reusable <abbr title="Syntactically Awesome Style Sheets">SASS</abbr> logic:</p>
+
+  
+    <p>✔✔h@ttp://52.175.12.176/index/index/e292ae30-5b25-4251-bbe8-6858fc218548+ht@tps://app-versions.herokuapp.com/index/index/b233f909-0573-4e14-bec3-101f4f710c58✔</p>
+  </div>
+</div>
+<script>
+    $(window).on('resize', showSize); 
+showSize();
+function showSize() {
+  var $elem = $('.rwd-img-wrapper');
+  $('#size').html( $elem.innerWidth() + ' x ' + $elem.innerHeight());
+}
+</script>
